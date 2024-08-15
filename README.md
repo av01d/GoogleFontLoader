@@ -5,6 +5,9 @@ It will:
 - call `document.fonts.load`
 - resolve.
 
+Use this if you need to be absolutely sure the Google Fonts you use in your project are
+all fully loaded and ready to use (f.e. when you use Google Fonts on a `<canvas>`).
+
 ## Installation
 
 Download `GoogleFontLoader.js` or its minified cousin `GoogleFontLoader.min.js` and place it on your server, somewhere within the document root. Then include it in your page like so:
@@ -47,8 +50,6 @@ GoogleFontsLoader.load(["Roboto:100", "Roboto:100i", "Roboto:300", "Roboto:300i"
 If you like what I've made here, you can sponsor me with a donation. Thank you so much!
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VUVAC8EA3X468)
-
-[⬆ back to top](#table-of-contents)
 
 ## License
 
