@@ -13,7 +13,7 @@ const GoogleFontLoader = (() => {
 	 * Load one or multiple Google Fonts
 	 * Returns a promise.
 	 *
-	 * @param {Array} fonts Fonts to load, f.e: ['Anton:400','Pacifico','Londrina:900i']
+	 * @param {Array} fonts Fonts to load, f.e: ['Anton:400','Pacifico','Roboto:900i']
 	 * @return {Promise} A promise which is resolved once all fonts are ready to use
 	 */
 	const load = fonts => {
