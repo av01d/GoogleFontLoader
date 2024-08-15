@@ -31,20 +31,26 @@ For example:
 
 ```javascript
 // Just load the `Anton` font family:
-GoogleFontLoader.
-load(['Anton'])
-.then(() => { console.log('Anton font family loaded successfully') }
+GoogleFontLoader
+.load(["Anton"])
+.then(() => { console.log('Anton font family loaded successfully') })
 
-// Load `Anton`, `Concert One`, `Passion One` and `Titan One` (these fonts all have just one style)
-// Load `Passion One` in a single variant: 400 (regular)
-// Load `Londrina Solid` in two variants: 400 (regular) and 900 (black)
+// Load 'Anton', 'Concert One', 'Passion One' and 'Titan One' (these fonts all have just one style)
+// Load 'Passion One' in a single variant: 400 (regular)
+// Load 'Londrina Solid' in two variants: 400 (regular) and 900 (black)
 GoogleFontLoader
 .load(["Anton", "Concert One0", "Titan One", "Londrina Solid:400", "Londrina Solid:900"]);
-.then(() => { console.log('Fonts loaded successfully') }
+.then(() => { console.log('Fonts loaded successfully') })
 
 // Load the Roboto font family in all its 12 variants
-GoogleFontsLoader.load(["Roboto:100", "Roboto:100i", "Roboto:300", "Roboto:300i", "Roboto:400", "Roboto:400i", "Roboto:500", "Roboto:500i", "Roboto:700", "Roboto:700i", "Roboto:900", "Roboto:900i"])
-.then(() => { console.log('Fonts loaded successfully') }
+GoogleFontLoader.load(["Roboto:100", "Roboto:100i", "Roboto:300", "Roboto:300i", "Roboto:400", "Roboto:400i", "Roboto:500", "Roboto:500i", "Roboto:700", "Roboto:700i", "Roboto:900", "Roboto:900i"])
+.then(() => { console.log('Fonts loaded successfully') })
+```
+
+Or using async/await:
+```javascript
+await GoogleFontLoader.load(["Anton", "Roboto:500i"])
+// Render something in the 'Anton' or 'Roboto:500i' font variants
 ```
 
 ## Donations
