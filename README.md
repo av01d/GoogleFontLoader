@@ -1,6 +1,9 @@
 # GoogleFontLoader
-A super simple Javascript library to load (a single or multiple) Google Font(s).
-It will load the stylesheets for the font, then call `document.fonts.load`.
+A super simple and very light weight (990 bytes minified) Javascript library to load (a single or multiple) Google Font(s).
+It will:
+- load the stylesheets for the font
+- call `document.fonts.load`
+- resolve.
 
 ## Installation
 
@@ -16,7 +19,6 @@ Load Google Fonts like this:
 GoogleFontLoader
 .load(ArrayOfFontFamilies)
 .then(...)
-.catch(...)
 ```
 
 For example:
@@ -36,7 +38,22 @@ GoogleFontLoader
 .then(() => { console.log('Fonts loaded successfully') }
 
 // Load the Roboto font family in all its 12 variants
-GoogleFontsLoader.load(["Roboto:100", "Roboto:100i", "Roboto:300", "Roboto:300i", "Roboto:400", "Roboto:400i", "Roboto:500", "Roboto:500i", "Roboto:700", "Roboto:700i", "Roboto:900", "Roboto:900i"]
+GoogleFontsLoader.load(["Roboto:100", "Roboto:100i", "Roboto:300", "Roboto:300i", "Roboto:400", "Roboto:400i", "Roboto:500", "Roboto:500i", "Roboto:700", "Roboto:700i", "Roboto:900", "Roboto:900i"])
+.then(() => { console.log('Fonts loaded successfully') }
 ```
 
+## Donations
+
+If you like what I've made here, you can sponsor me with a donation. Thank you so much!
+
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VUVAC8EA3X468)
+
+[⬆ back to top](#table-of-contents)
+
+## License
+
+This plugin is released under the MIT license. It is simple and easy to understand and places almost no restrictions on what you can do with the code.
+[More Information](http://en.wikipedia.org/wiki/MIT_License)
+
+The development of this component was funded by [Zygomatic](https://www.zygomatic.nl/).
 
