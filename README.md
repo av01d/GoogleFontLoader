@@ -8,6 +8,8 @@ It will:
 Use this if you need to be absolutely sure the Google Fonts you use in your project are
 all fully loaded and ready to use (f.e. when you use Google Fonts on a `<canvas>`).
 
+GoogleFontLoader can be used instead of TypeKit's ancient `webfontloader`, albeit strictly for Google Fonts. GoogleFontLoader is much lighter (1kB vs 12kB minified) and more modern.
+
 ## Installation
 
 Download `GoogleFontLoader.js` or its minified cousin `GoogleFontLoader.min.js` and place it on your server, somewhere within the document root. Then include it in your page like so:
