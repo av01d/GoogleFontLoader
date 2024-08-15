@@ -68,7 +68,7 @@ const GoogleFontLoader = (() => {
 			urlArgs.push('family=' + arg + wargs.join(';'))
 		}
 	
-		const googleFontUrl = 'https://fonts.googleapis.com/css2?' + urlArgs.join('&') + '&display=swap'
+		const googleFontUrl = 'https://fonts.googleapis.com/css2?' + urlArgs.join('&')
 		//console.log('Font Url', googleFontUrl)
 		
 		return new Promise(resolve => {
