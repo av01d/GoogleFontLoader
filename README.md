@@ -1,8 +1,8 @@
 # GoogleFontLoader
 A super simple and very light weight (948 bytes minified) Javascript library to load (a single or multiple) Google Font(s).
 It will:
-- load the stylesheets for the font
-- call `document.fonts.load`
+- load the stylesheets for the font from https://fonts.googleapis.com/css2
+- call `document.fonts.load` for each font
 - resolve.
 
 Use this if you need to be absolutely sure the Google Fonts you use in your project are
