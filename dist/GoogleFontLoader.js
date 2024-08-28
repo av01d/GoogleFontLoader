@@ -8,6 +8,18 @@
  * @url https://github.com/av01d/GoogleFontLoader
  */
 const GoogleFontLoader = (() => {
+
+	const sortSet = set => {
+		const entries = []
+		for (const member of set) {
+			ntries.push(member)
+		}
+		set.clear()
+		for (const entry of entries.sort()) {
+			set.add(entry)
+		}
+		return set
+	}
 	
 	/**
 	 * Load one or multiple Google Fonts
@@ -44,6 +56,8 @@ const GoogleFontLoader = (() => {
 		
 		for (let fam in families) {
 			const props = families[fam]
+			props.normal = sortSet(props.normal)
+			props.italic = sortSet(props.italic)
 		
 			let arg = encodeURIComponent(fam)
 			if (props.normal.size == 1 && props.italic.size == 0 && props.normal.has(400)) {
